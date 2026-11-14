@@ -1,0 +1,22 @@
+{
+  "schema": {
+    "type": "object",
+    "properties": {
+      "plans": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "date": { "type": "string" },
+            "title": { "type": "string" },
+            "category": { "type": "string" },
+            "summary": { "type": "string" },
+            "url": { "type": "string" }
+          },
+          "required": ["title"]
+        }
+      }
+    }
+  },
+  "instructions": "Each item in plans is one dated announcement from this changelog or release-notes page, newest first. Include at most the 15 most recent items. date: the announcement date as YYYY-MM-DD. If the entry shows no year, take it from the month heading (for example 'Nov 5' under 'November, 2026' becomes 2026-11-05). title: a short headline for the announcement, as written on the page. If one date has several announcements, use the most important one. category: one word, for example model, api, pricing, deprecation or other. summary: one short sentence in English that tells a developer what changed, at most 200 characters. url: the link to this announcement's own page if the page shows one, otherwise an empty string. Skip entries that have no title."
+}

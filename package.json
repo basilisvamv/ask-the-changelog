@@ -1,0 +1,19 @@
+{
+  "name": "ask-the-changelog",
+  "version": "0.1.0",
+  "description": "Ask the Changelog: watches the changelogs of AI companies through Context.dev, scores new announcements against your keywords and alerts you on high matches.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "dev": "node --watch --env-file=.env src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}
